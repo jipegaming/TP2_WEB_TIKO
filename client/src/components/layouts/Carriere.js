@@ -27,7 +27,6 @@ class Carriere extends Component {
                 </ Row>
                 <Row className="show-grid">
                     <Col>
-                        <img src="" />
                         <code>CARRIERE PRO</code>
                         <br />
                         {dummySentences.slice(0, 6).join(' ')}

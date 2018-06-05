@@ -1,18 +1,24 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Navbar extends Component {
-    render() {
-        return ( 
+  render() {
+    return (
+      <div className="nav fixedTop" >
 
-        <ul className="nav fixedTop">
+        <div className="nav float-left">
+          <a className="nav-link active" href="#TopPage">Etude</a>
+        </div>
+
+        <div className="nav float-right">
+          <ul>
             <li className="nav-item">
-              <a className="nav-link active" href="#Carriere">Carrière Professionnelle</a>
+              <a className="nav-link active" href="#Carriere">Carrière</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#Reseaux">Réseaux Professionnels</a>
+              <a className="nav-link" href="#Reseaux">Réseaux</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#Projets">Projets Futurs</a>
+              <a className="nav-link" href="#Projets">Projets</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#Contacts">Contacts</a>
@@ -21,8 +27,11 @@ class Navbar extends Component {
               <a className="nav-link" href="#Portfolio">Portfolio</a>
             </li>
           </ul>
-        )
-    }
+        </div>
+
+      </div>
+    )
+  }
 }
 
 export default Navbar;
