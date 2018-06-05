@@ -12,12 +12,14 @@ import Porfolio from './components/layouts/Portfolio';
 class App extends Component {
   render() {
     return (
-        <div>
-          <Navbar />
-          <Carriere />
-          <Reseaux />
-          <Projets />
-        </div>
+      <div>
+        <Navbar />
+        <Carriere />
+        <Reseaux />
+        <Projets />
+        <Contact />
+        <Porfolio />
+      </div>
     );
   }
 }

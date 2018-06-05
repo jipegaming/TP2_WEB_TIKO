@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap/lib/';
+
 const dummySentences = [
     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
     'Donec hendrerit tempor tellus.',
@@ -18,24 +19,40 @@ class Carriere extends Component {
 
     render() {
         const gridInstance = (
-            <Grid>
+            <Grid id="Carriere">
                 <Row className="show-grid">
-                    <Col sm={6} md={3}>
-                        <code>&lt;{'Col sm={6} md={3}'} /">">">">&gt;</code>
+                    <Col>
+                        <h3>CARRIÈRE PROFESSIONNELLE</h3>
+                    </ Col>
+                </ Row>
+                <Row className="show-grid">
+                    <Col>
+                        <img src="" />
+                        <code>CARRIERE PRO</code>
                         <br />
                         {dummySentences.slice(0, 6).join(' ')}
                     </Col>
-                    <Col sm={6} md={3}>
-                        <code>&lt;{'Col sm={6} md={3}'} /">">">">&gt;</code>
+                    <Col>
+                        <code>&lt;{'Col sm={3} md={3}'} /">">">">&gt;</code>
+                        <br />
+                        {dummySentences.slice(0, 4).join(' ')}
+                    </Col>
+                    <Col>
+                        <code>CARRIERE PRO</code>
+                        <br />
+                        {dummySentences.slice(0, 6).join(' ')}
+                    </Col>
+                    <Col>
+                        <code>&lt;{'Col sm={3} md={3}'} /">">">">&gt;</code>
                         <br />
                         {dummySentences.slice(0, 4).join(' ')}
                     </Col>
                 </Row>
             </Grid>
-            );
-        return ( 
+        );
+        return (
             gridInstance
-            )
+        )
     }
 }
 
