@@ -10,14 +10,12 @@ import Footer from './components/layouts/Footer';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
         <div>
           <Navbar />
           <Carriere />
           <Reseaux />
           <Projets />
         </div>
-      </BrowserRouter>
     );
   }
 }
