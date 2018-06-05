@@ -5,7 +5,7 @@ class Porfolio extends Component {
     render() {
         return ( <div id="Portfolio">
         
-        Bibliographie </div>
+        Portfolio </div>
         )
     }
 }
