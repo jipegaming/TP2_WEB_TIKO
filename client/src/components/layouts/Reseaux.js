@@ -1,41 +1,84 @@
 import React, {Component} from 'react';
-import { Grid, Row, Col } from 'react-bootstrap/lib/';
+import { Grid, Row, Col, Media,FormGroup } from 'react-bootstrap/lib/';
 
-const dummySentences = [
-    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    'Donec hendrerit tempor tellus.',
-    'Donec pretium posuere tellus.',
-    'Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.',
-    'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-    'Nulla posuere.',
-    'Donec vitae dolor.',
-    'Nullam tristique diam non turpis.',
-    'Cras placerat accumsan nulla.',
-    'Nullam rutrum.',
-    'Nam vestibulum accumsan nisl.'
-];
+function FieldGroup({ id, image, subtitle, text }) {
+    return (
+        <FormGroup controlId = {id}>
+            <Row className   = "show-grid">
+                <Col>
+                    <Media.Left>
+                        <img width={64} height={64} alt="thumbnail" src={image}/>
+                    </Media.Left>
+
+                    <Media.Body>
+                        <Media.Heading  >
+                            {subtitle}
+                        </Media.Heading>
+                        <p>{text}</p>
+                    </Media.Body>
+                </ Col>
+            </ Row>
+        </FormGroup>
+    );
+}
 
 class Reseaux extends Component {
     render() { 
         
-        const gridInstance = (
-        <Grid>
-            <Row className="show-grid">
-                <Col sm={6} md={3}>
-                    <code>&lt;{'Col sm={6} md={3}'} /">">">">&gt;</code>
-                    <br />
-                    {dummySentences.slice(0, 6).join(' ')}
-                </Col>
-                <Col sm={6} md={3}>
-                    <code>&lt;{'Col sm={6} md={3}'} /">">">">&gt;</code>
-                    <br />
-                    {dummySentences.slice(0, 4).join(' ')}
-                </Col>
-            </Row>
+        const articleInstance =(
+
+            <Grid id="reseaux">
+
+        <Row style={{ paddingTop: 50, paddingBottom: 30 }}>
+            <Col >
+                <h2>RÉSEAUX PROFESIONNELS</h2>
+            </Col>
+        </ Row>
+
+        <FieldGroup
+        id="reseauPro"
+        image=""
+        subtitle="Architectes concurrents"
+        text="Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+        tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+        fringilla. Donec lacinia congue felis in faucibus."
+        />
+
+        <FieldGroup
+        id="reseauPro"
+        image=""
+        subtitle="Avis sur les entrepreneurs"
+        text="Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+        tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+        fringilla. Donec lacinia congue felis in faucibus."
+        />
+
+        <FieldGroup
+        id="reseauPro"
+        image=""
+        subtitle="Choix des personnes"
+        text="Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+        tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+        fringilla. Donec lacinia congue felis in faucibus."
+        />
+
+        {/* <FieldGroup
+        id="reseauPro"
+        img=""
+        subtitle="Méthode de travail"
+        text="Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+        tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+        fringilla. Donec lacinia congue felis in faucibus."
+        /> */}
+
         </Grid>
         );
 
-        return ( gridInstance
+        return ( articleInstance
         )
     }
 }

@@ -8,27 +8,27 @@ class Navigation extends Component {
       <Navbar inverse collapseOnSelect fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <a style={{ paddingRight: 10 }} href="#top-page">Études Projets d'Architecture</a>
+            <a style      = {{ paddingRight: 10 }} href = "#top-page">Études Projets d'Architecture</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
 
           <Nav pullRight>
-            <NavItem href="#carriere">
+            <NavItem href = "#carriere">
               Carrière
             </NavItem>
-            <NavItem href="#reseaux">
+            <NavItem href = "#reseaux">
               Réseaux
             </NavItem>
 
-            <NavItem href="#projets">
+            <NavItem href = "#projets">
               Projets
             </NavItem>
-            <NavItem href="#contacts">
+            <NavItem href = "#contacts">
               Contacts
             </NavItem>
-            <NavItem href="#portfolio">
+            <NavItem href = "#portfolio">
               Portfolio
             </NavItem>
 
