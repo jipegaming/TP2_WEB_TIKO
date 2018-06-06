@@ -5,27 +5,35 @@ class Navigation extends Component {
   render() {
     return (
 
-      <Navbar>
+      <Navbar inverse collapseOnSelect fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#home">React-Bootstrap</a>
+            <a style={{ paddingRight: 10 }} href="#top-page">Études Projets d'Architecture</a>
           </Navbar.Brand>
+          <Navbar.Toggle />
         </Navbar.Header>
-        <Nav>
-          <NavItem eventKey={1} href="#">
-            Link
-    </NavItem>
-          <NavItem eventKey={2} href="#">
-            Link
-    </NavItem>
-          <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-            <MenuItem eventKey={3.1}>Action</MenuItem>
-            <MenuItem eventKey={3.2}>Another action</MenuItem>
-            <MenuItem eventKey={3.3}>Something else here</MenuItem>
-            <MenuItem divider />
-            <MenuItem eventKey={3.4}>Separated link</MenuItem>
-          </NavDropdown>
-        </Nav>
+        <Navbar.Collapse>
+
+          <Nav pullRight>
+            <NavItem href="#carriere">
+              Carrière
+            </NavItem>
+            <NavItem href="#reseaux">
+              Réseaux
+            </NavItem>
+
+            <NavItem href="#projets">
+              Projets
+            </NavItem>
+            <NavItem href="#contacts">
+              Contacts
+            </NavItem>
+            <NavItem href="#portfolio">
+              Portfolio
+            </NavItem>
+
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
 
       // <div className="nav fixedTop" >

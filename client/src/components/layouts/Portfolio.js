@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-bootstrap/lib/';
 
 class Porfolio extends Component {
     render() {
-        return ( <div id="Portfolio">
+        return ( <div id="portfolio">
         
         Portfolio </div>
         )
