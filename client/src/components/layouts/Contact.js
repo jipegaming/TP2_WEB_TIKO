@@ -18,10 +18,10 @@ class Contact extends Component {
 
     static defaultProps = {
         center: {
-            lat: 59.95,
-            lng: 30.33
+            lat: -17.634410,
+            lng: -149.602809
         },
-        zoom: 11
+        zoom: 17
     };
 
     render() {
