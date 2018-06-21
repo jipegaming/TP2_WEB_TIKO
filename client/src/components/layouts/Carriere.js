@@ -35,8 +35,8 @@ function FieldGroup({ id, image, subtitle, text, index }) {
 
     }
     return (
-        <FormGroup controlId = {id}>
-            <Row className   = "show-grid">
+        <FormGroup controlId={id}>
+            <Row className="show-grid">
                 <Col>
                     {html}
                 </ Col>
@@ -50,16 +50,26 @@ class Carriere extends Component {
 
     render() {
 
-        const articleInstance =(
+        const articleInstance = (
 
             <Grid id="carriere">
 
-        <Row style={{ paddingTop: 50, paddingBottom: 30 }}>
-            <Col >
-                <h2>CARRIÈRE PROFESSIONNELLE</h2>
-            </Col>
-        </ Row>
+                <Row style={{ paddingTop: 50, paddingBottom: 30 }}>
+                    <Col >
+                        <h2>CARRIÈRE PROFESSIONNELLE</h2>
+                    </Col>
+                </ Row>
 
+                <FieldGroup
+                    id="carrierePro"
+                    image=""
+                    subtitle="Biographie"
+                    text="Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                    ante sollicitudin commodo.Cras purus odio, vestibulum in vulputate at,
+                tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus."
+                />
+        
         <FieldGroup
         id="carrierePro"
         image="assets/Archi_0.jpg"
@@ -116,5 +126,5 @@ class Carriere extends Component {
 
 export default Carriere;
 
-       
+
 
