@@ -29,7 +29,7 @@ class Contact extends Component {
             <Grid id="contact">
                 <Row className="show-grid">
                     <Col>
-                        <h2>Contact</h2>
+                        <h2>CONTACT</h2>
                     </Col>
                 </Row>
                 <Row className="show-grid">
