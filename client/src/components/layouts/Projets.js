@@ -23,7 +23,7 @@ function FieldGroup({ id, image, subtitle, text, index }) {
 
         return (
             <FormGroup controlId={id}>
-                <Row className="show-grid">
+                <Row style={{ paddingRight : 50, paddingLeft : 50 }} className="show-grid">
                     <Col>
                         {html}
                     </ Col>
@@ -51,18 +51,17 @@ class Projets extends Component {
         });
         const articleInstance = (
 
-            <Grid id="Projets">
+            <Grid id="projets" fluid>
 
-                <Row style={{ paddingTop: 50, paddingBottom: 30 }}>
-                    <Col >
-
-                        <h2>PROJETS FUTURS</h2>
+                <Row>
+                    <Col style={{ padding: 50}} className="text-center">
+                        <h2 >PROJETS FUTURS</h2>
                     </Col>
                 </ Row>
                 {render}
                 <Parallax bgImage={image1}
                     strength={500}>
-                    <div style={{ height: 250 }}></div>
+                    <div style={{ height: 300 }}></div>
                 </Parallax>
             </Grid>
         )

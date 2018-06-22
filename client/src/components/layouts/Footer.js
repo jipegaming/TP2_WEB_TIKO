@@ -4,7 +4,7 @@ import {Jumbotron, Button } from 'react-bootstrap/lib/';
 class Footer extends Component {
     render() {
         return (
-            <Jumbotron>
+            <Jumbotron style={{ paddingTop : 50}} className="text-center">
                 <h1>Hello, world!</h1>
                 <p>
                     This is a simple hero unit, a simple jumbotron-style component for calling
