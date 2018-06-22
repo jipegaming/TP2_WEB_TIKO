@@ -4,6 +4,8 @@ import { Grid, Row, Col } from 'react-bootstrap/lib/';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 
+// Source image 
+
 const photos = [
     {
         src: "assets/ariiura1-1200x900.jpg",
@@ -82,6 +84,7 @@ const photos = [
     },
 ];
 
+// Portfolio
 class Porfolio extends React.Component {
 
     constructor() {

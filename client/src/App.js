@@ -9,9 +9,14 @@ import Porfolio from './components/layouts/Portfolio';
 
 class App extends Component {
   render() {
+    const header = (
+      <div className="py-5 text-center" style={{ 'background-image' : "url('assets/main-banner.jpg')", height: 721 }}>
+      </div>
+    )
     return (
       <div id="top-page">
         <Navigation />
+        {header}
         <Carriere />
         <Reseaux />
         <Porfolio />

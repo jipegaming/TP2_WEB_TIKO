@@ -14,6 +14,7 @@ function FieldGroup({ image, subtitle, text}) {
     );
 }
 
+// Donnée page Réseaux
 class Reseaux extends Component {
     config = [
         {
@@ -37,6 +38,9 @@ class Reseaux extends Component {
             text: "Lors de mon premier contact avec le client, j'ai l'habitude de le faire sur son terrain pour que je puisse avoir un aperçu de son environnement et de son voisinage. Ainsi j'aurais une idée bien plus claire de ce que je pourrais lui présenter. Ensuite je lui demande son budget et ces attentes aux niveau architecturale du projet pour lui dire directement si c'est réalisable ou pas. S'en suit tout le travail de plans : esquisses – modèle 3D – plans définitif pour obtention du permis de construire.",
         },
     ]
+
+    // Rendu de la page 
+    
     render() {
 
         const render = this.config.map((res, i) => {

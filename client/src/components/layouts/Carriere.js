@@ -4,6 +4,8 @@ import { Parallax } from 'react-parallax';
 
 const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
 
+// Structure
+
 function FieldGroup({ image, subtitle, text}) {
     return (         
                 <Col sm={6} md={3}  className="text-center">
@@ -14,6 +16,7 @@ function FieldGroup({ image, subtitle, text}) {
     );
 }
 
+// Donnée page carrière 
 class Carriere extends Component {
     config = [
         {
@@ -38,6 +41,8 @@ class Carriere extends Component {
         }
     ]
 
+    // Rendu du site 
+
     render() {
         const render = this.config.map((carr, i) => {
             return (<FieldGroup
@@ -52,9 +57,6 @@ class Carriere extends Component {
         const articleInstance = (
             
             <Grid>
-                <Row>
-                    <img src="assets/main-banner.jpg" />
-                </Row>
                 <Row className="text-center">
                         <h2 id="carriere" style={{ paddingTop: 80, paddingBottom: 50 }}>CARRIÈRE PROFESSIONNELLE</h2>                  
                 </ Row>
