@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col, Media, FormGroup } from 'react-bootstrap/lib/';
+import { Parallax } from 'react-parallax';
+
+const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
 
 function FieldGroup({ id, image, subtitle, text, index }) {
     let html;
@@ -7,13 +10,13 @@ function FieldGroup({ id, image, subtitle, text, index }) {
         html = (
             <Media>
                 <Media.Left>
-                    <img width={64} height={64} alt="thumbnail" src={image} />
+                    <img width={100} height={100} alt="thumbnail" src={image} />
                 </Media.Left>
                 <Media.Body>
                     <Media.Heading  >
                         {subtitle}
                     </Media.Heading>
-                    <p text-justify>{text}</p>
+                    <p  className="text-justify">{text}</p>
                 </Media.Body>
             </Media>
         )
@@ -24,10 +27,10 @@ function FieldGroup({ id, image, subtitle, text, index }) {
                     <Media.Heading  >
                         {subtitle}
                     </Media.Heading>
-                    <p text-justify>{text}</p>
+                    <p  className="text-justify">{text}</p>
                 </Media.Body>
                 <Media.Right>
-                    <img width={64} height={64} alt="thumbnail" src={image} />
+                    <img width={100} height={100} alt="thumbnail" src={image} />
                 </Media.Right>
             </Media>
         )
@@ -85,10 +88,14 @@ class Reseaux extends Component {
                 <Row style={{ paddingTop: 50, paddingBottom: 30 }}>
                     <Col >
 
-                        <h2>Réseaux professionnels</h2>
+                        <h2>RÉSEAUX PROFESIONNELS</h2>
                     </Col>
                 </ Row>
                 {render}
+                <Parallax bgImage={image1}
+                    strength={500}>
+                    <div style={{ height: 250 }}></div>
+                </Parallax>
             </Grid>
         )
         return (articleInstance)

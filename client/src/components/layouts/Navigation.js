@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap/lib';
+import { Nav, Navbar, NavItem} from 'react-bootstrap/lib';
 
 class Navigation extends Component {
   render() {
@@ -8,7 +8,7 @@ class Navigation extends Component {
       <Navbar inverse collapseOnSelect fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <a style      = {{ paddingRight: 10 }} href = "#top-page">Études Projets d'Architecture</a>
+            <a style      = {{ paddingRight: 10 }} href = "#top-page">Tikko - Études Projets d'Architecture</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -21,14 +21,14 @@ class Navigation extends Component {
             <NavItem href = "#reseaux">
               Réseaux
             </NavItem>
-            <NavItem href = "#projets">
+            <NavItem href = "#Projets">
               Projets
-            </NavItem>
-            <NavItem href = "#contacts">
-              Contacts
             </NavItem>
             <NavItem href = "#portfolio">
               Portfolio
+            </NavItem>
+            <NavItem href = "#contact">
+              Contacts
             </NavItem>
 
           </Nav>
