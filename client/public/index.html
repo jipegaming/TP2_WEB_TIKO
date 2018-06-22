@@ -14,6 +14,21 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 
+  <!-- Firebase API -->
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCdddqHIC2h0pAYUdDW3zNkf5fzP82vZ_8",
+    authDomain: "architect-tikko.firebaseapp.com",
+    databaseURL: "https://architect-tikko.firebaseio.com",
+    projectId: "architect-tikko",
+    storageBucket: "architect-tikko.appspot.com",
+    messagingSenderId: "142196939827"
+  };
+  firebase.initializeApp(config);
+</script>
+
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
