@@ -21,9 +21,6 @@ class Navigation extends Component {
             <NavItem href = "#reseaux">
               Réseaux
             </NavItem>
-            <NavItem href = "#projets">
-              Projets
-            </NavItem>
             <NavItem href = "#portfolio">
               Portfolio
             </NavItem>

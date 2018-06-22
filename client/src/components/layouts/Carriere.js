@@ -1,50 +1,16 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Media, FormGroup } from 'react-bootstrap/lib/';
+import { Grid, Row, Col} from 'react-bootstrap/lib/';
 import { Parallax } from 'react-parallax';
 
 const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
 
-function FieldGroup({ id, image, subtitle, text, index }) {
-    let html;
-    if (index % 2 === 0) {
-        html = (
-            <Media>
-                <Media.Left className="border">
-                    <img width={100} height={100} alt="thumbnail" src={image} />
-                </Media.Left>
-                <Media.Body>
-                    <Media.Heading>
-                        {subtitle}
-                    </Media.Heading>
-                    <p className="text-justify">{text}</p>
-                </Media.Body>
-            </Media>
-        )
-    } else {
-        html = (
-            <Media>
-                <Media.Body >
-                    <Media.Heading>
-                        {subtitle}
-                    </Media.Heading>
-                    <p className="text-justify">{text}</p>
-                </Media.Body>
-                <Media.Right>
-                    <img width={100} height={100} alt="thumbnail" src={image} />
-                </Media.Right>
-            </Media>
-        )
-
-
-    }
-    return (
-        <FormGroup controlId={id}>
-            <Row style={{ paddingRight: 50, paddingLeft: 50 }} className="show-grid">
-                <Col>
-                    {html}
+function FieldGroup({ image, subtitle, text}) {
+    return (         
+                <Col sm={6} md={3}  className="text-center">
+                <img width={100} height={100} alt="thumbnail" src={image} />
+                <h4>{subtitle}</h4>
+                <p>{text}</p>
                 </ Col>
-            </ Row>
-        </FormGroup>
     );
 }
 
@@ -82,18 +48,19 @@ class Carriere extends Component {
                 index={i}
             />)
         });
+        
         const articleInstance = (
-
-            <Grid fluid>
+            
+            <Grid>
                 <Row>
-                    <img src="assets/main-banner.jpg" style={{ width: '100%', height: '100%' }} responsive />
+                    <img src="assets/main-banner.jpg" />
                 </Row>
-                <Row style={{ padding: 50 }} className="text-center">
-                    <Col id="carriere" >
-                        <h2 >CARRIÈRE PROFESSIONNELLE</h2>
-                    </Col>
+                <Row className="text-center">
+                        <h2 id="carriere" style={{ paddingTop: 80, paddingBottom: 50 }}>CARRIÈRE PROFESSIONNELLE</h2>                  
                 </ Row>
+                <Row>
                 {render}
+                </Row>
                 <Parallax bgImage={image1} strength={500}>
                     <div style={{ height: 300 }}></div>
                 </Parallax>

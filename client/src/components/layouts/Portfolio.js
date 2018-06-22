@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Grid, Row, Col } from 'react-bootstrap/lib/';
+import { Grid, Row, Col } from 'react-bootstrap/lib/';
 // import { render } from 'react-dom';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
@@ -120,33 +120,26 @@ class Porfolio extends React.Component {
     }
 
     render() {
-
         return (
-            <div>
-                <Gallery photos={photos} onClick={this.openLightbox} />
-                <Lightbox
-                    images={photos}
-                    onClose={this.closeLightbox}
-                    onClickPrev={this.gotoPrevious}
-                    onClickNext={this.gotoNext}
-                    currentImage={this.state.currentImage}
-                    isOpen={this.state.lightboxIsOpen}
-                />
-            </div>
-        );
+            <Grid id="portfolio">
+                <Row className="show-grid">
 
-        // const gridInstance = (
-        //     <Grid id="portfolio">
-        //         <Row style={{ paddingTop: 50, paddingBottom: 30 }} className="show-grid">
-        //             <Col>
-        //                 <h2>PORTFOLIO</h2>
-        //             </Col>
-        //         </Row>
-        //     </Grid>
-        // )
-        // return (
-        //     gridInstance
-        // )
+                    <h2 className="text-center" style={{ padding:50}}>PORTFOLIO</h2>
+
+                    <Col>
+                        <Gallery photos={photos} onClick={this.openLightbox} />
+                        <Lightbox
+                            images={photos}
+                            onClose={this.closeLightbox}
+                            onClickPrev={this.gotoPrevious}
+                            onClickNext={this.gotoNext}
+                            currentImage={this.state.currentImage}
+                            isOpen={this.state.lightboxIsOpen}
+                        />
+                    </Col>
+                </Row>
+            </Grid>
+        )
     }
 }
 

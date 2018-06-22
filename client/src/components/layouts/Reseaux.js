@@ -4,46 +4,13 @@ import { Parallax } from 'react-parallax';
 
 const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
 
-function FieldGroup({ id, image, subtitle, text, index }) {
-    let html;
-    if (index % 2 === 0) {
-        html = (
-            <Media>
-                <Media.Left>
-                    <img width={100} height={100} alt="thumbnail" src={image} />
-                </Media.Left>
-                <Media.Body>
-                    <Media.Heading  >
-                        {subtitle}
-                    </Media.Heading>
-                    <p className="text-justify">{text}</p>
-                </Media.Body>
-            </Media>
-        )
-    } else {
-        html = (
-            <Media>
-                <Media.Body>
-                    <Media.Heading  >
-                        {subtitle}
-                    </Media.Heading>
-                    <p className="text-justify">{text}</p>
-                </Media.Body>
-                <Media.Right>
-                    <img width={100} height={100} alt="thumbnail" src={image} />
-                </Media.Right>
-            </Media>
-        )
-
-    }
-    return (
-        <FormGroup controlId={id}>
-            <Row style={{ paddingRight: 50, paddingLeft: 50 }} className="show-grid">
-                <Col>
-                    {html}
+function FieldGroup({ image, subtitle, text}) {
+    return (         
+                <Col sm={6} md={3} sm={6} md={3}  className="text-center">
+                <img width={100} height={100} alt="thumbnail" src={image} className={'mx-auto'}/>
+                <h4>{subtitle}</h4>
+                <p>{text}</p>
                 </ Col>
-            </ Row>
-        </FormGroup>
     );
 }
 
@@ -68,7 +35,7 @@ class Reseaux extends Component {
             subtitle: "Méthode de travail",
             image: "assets/icones/drawing-architecture-project-of-a-house.svg",
             text: "Lors de mon premier contact avec le client, j'ai l'habitude de le faire sur son terrain pour que je puisse avoir un aperçu de son environnement et de son voisinage. Ainsi j'aurais une idée bien plus claire de ce que je pourrais lui présenter. Ensuite je lui demande son budget et ces attentes aux niveau architecturale du projet pour lui dire directement si c'est réalisable ou pas. S'en suit tout le travail de plans : esquisses – modèle 3D – plans définitif pour obtention du permis de construire.",
-        }
+        },
     ]
     render() {
 
@@ -83,16 +50,16 @@ class Reseaux extends Component {
         });
         const articleInstance = (
 
-            <Grid id="reseaux" fluid>
-
+            <Grid id="reseaux">
                 <Row>
                     <Col style={{ padding: 50 }} className="text-center">
                         <h2>RÉSEAUX PROFESIONNELS</h2>
                     </Col>
                 </ Row>
+                <Row>
                 {render}
-                <Parallax bgImage={image1}
-                    strength={500}>
+                </Row>
+                <Parallax bgImage={image1} strength={500}>
                     <div style={{ height: 300 }}></div>
                 </Parallax>
             </Grid>

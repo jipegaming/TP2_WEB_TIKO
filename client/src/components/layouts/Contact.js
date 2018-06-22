@@ -27,8 +27,8 @@ class Contact extends Component {
     render() {
         const gridInstance = (
             <Grid id="contact">
-                <Row style={{ paddingTop: 50, paddingBottom: 30 }} className="show-grid">
-                    <Col>
+                <Row className="show-grid">
+                    <Col style={{ padding: 50 }} className="text-center">
                         <h2>CONTACT</h2>
                     </Col>
                 </Row>
@@ -87,7 +87,7 @@ class Contact extends Component {
                     </Col>
                     <Col md={6}>
                         <h3>Plan de situation</h3>
-                        <div className='google-map' style={{ height: '80vh', width: '100%', paddingTop: 20 }}>
+                        <div className='google-map' style={{ height: '80vh', width: '80vh', paddingTop: 20, paddingBottom:50 }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "AIzaSyDgM3E3-6L-xeln5pOHXhnVQsy6e711o5Y" }}
                                 defaultCenter={this.props.center}
