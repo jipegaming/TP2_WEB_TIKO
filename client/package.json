@@ -6,6 +6,7 @@
     "google-map-react": "^1.0.4",
     "react": "^16.4.0",
     "react-bootstrap": "^0.32.1",
+    "react-bootstrap-zoom": "0.0.1",
     "react-dom": "^16.4.0",
     "react-parallax": "^1.8.0",
     "react-router-dom": "^4.3.1",

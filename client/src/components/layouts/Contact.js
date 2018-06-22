@@ -33,9 +33,15 @@ class Contact extends Component {
                     </Col>
                 </Row>
                 <Row className="show-grid">
-                    <Col md={6}>
+                    <Col md={6}>     
+                        <h3>Informations</h3>
+                    <div style={{ paddingTop: 20 }}>
+                        <p>N°TAHITI 396887 - R.C. 27078A</p>
+                        <p>Zone Industrielle de la Punaruu</p>
+                        <p>Immeuble Ramata 1er étage</p>
+                    </div>
                         <h3>Envoyez-moi votre message</h3>
-                        <Form>
+                        <Form style={{ paddingTop: 20 }}>
                             <Row>
                                 <Col sm={6}>
                                     <FieldGroup
@@ -81,7 +87,7 @@ class Contact extends Component {
                     </Col>
                     <Col md={6}>
                         <h3>Plan de situation</h3>
-                        <div className='google-map' style={{ height: '50vh', width: '100%' }}>
+                        <div className='google-map' style={{ height: '80vh', width: '100%', paddingTop: 20 }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "AIzaSyDgM3E3-6L-xeln5pOHXhnVQsy6e711o5Y" }}
                                 defaultCenter={this.props.center}
