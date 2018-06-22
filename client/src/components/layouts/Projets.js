@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
-<<<<<<< HEAD
-// import { Grid, Row, Col } from 'react-bootstrap/lib/';
-=======
 import { Grid, Row, Col, Media, FormGroup } from 'react-bootstrap/lib/';
 import { Parallax } from 'react-parallax';
->>>>>>> 06a503b6f108b00bcc8be0793492e2883f2b0408
 
 const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
 

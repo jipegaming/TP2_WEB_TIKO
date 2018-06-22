@@ -18,11 +18,7 @@ class App extends Component {
         <Projets />
         <Porfolio />
         <Contact />
-<<<<<<< HEAD
-        <Footer />
-=======
         <Footer/>
->>>>>>> 06a503b6f108b00bcc8be0793492e2883f2b0408
       </div>
     );
   }
