@@ -16,7 +16,7 @@ function FieldGroup({ id, image, subtitle, text, index }) {
                     <Media.Heading  >
                         {subtitle}
                     </Media.Heading>
-                    <p  className="text-justify">{text}</p>
+                    <p className="text-justify">{text}</p>
                 </Media.Body>
             </Media>
         )
@@ -27,7 +27,7 @@ function FieldGroup({ id, image, subtitle, text, index }) {
                     <Media.Heading  >
                         {subtitle}
                     </Media.Heading>
-                    <p  className="text-justify">{text}</p>
+                    <p className="text-justify">{text}</p>
                 </Media.Body>
                 <Media.Right>
                     <img width={100} height={100} alt="thumbnail" src={image} />
@@ -38,7 +38,7 @@ function FieldGroup({ id, image, subtitle, text, index }) {
     }
     return (
         <FormGroup controlId={id}>
-            <Row style={{ paddingRight : 50, paddingLeft : 50 }} className="show-grid">
+            <Row style={{ paddingRight: 50, paddingLeft: 50 }} className="show-grid">
                 <Col>
                     {html}
                 </ Col>
@@ -51,23 +51,23 @@ class Reseaux extends Component {
     config = [
         {
             subtitle: "Architectes concurrents",
-            image: "assets/Archi_0.jpg",
-            text: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,tempus viverra turpis. Fusce condimentum nunc ac nisi vulputatefringilla. Donec lacinia congue felis in faucibus.",
+            image: "assets/icones/rural-hotel-houses-with-trees.svg",
+            text: "Je ne me penche pas trop sur ce que font les autres en générale. Par contre j'ai bien apprécié l'architecture de l'immeuble JL Polynésie qui a été réalisé par Bertrand Portier et également l'immeuble LeBihan réalisé par Pascal Beaudet & Eric Regaud.",
         },
         {
-            subtitle: "Avis sur les entrepreneurs",
-            image: "assets/Archi_1.jpg",
-            text: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,tempus viverra turpis. Fusce condimentum nunc ac nisi vulputatefringilla. Donec lacinia congue felis in faucibus.",
+            subtitle: "Les entrepreneurs locaux",
+            image: "assets/icones/hammer-and-three-bricks-construction-symbol.svg",
+            text: "Je trouve qu'il manque beaucoup de formation et de professionnalisme pour certains entrepreneurs. Souvent les personnes ayant des brouettes et bétonnières, prétende être entrepreneurs, sans expériences et sans formations.",
         },
         {
-            subtitle: "Choix des personnes",
-            image: "assets/Archi_2.jpg",
-            text: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,tempus viverra turpis. Fusce condimentum nunc ac nisi vulputatefringilla. Donec lacinia congue felis in faucibus.",
+            subtitle: "Choix d'entrepreneurs",
+            image: "assets/icones/yard-stone-floor-architectonic-detail.svg",
+            text: "Je bosse principalement avec l'entreprise FareNov, dirigé par Pierre Vivi, pour toutes les réalisations des projets. Et parfois avec le maître d'œuvre Christian Preti, pour tout ce qui est contrôle de chantier.",
         },
         {
             subtitle: "Méthode de travail",
-            image: "assets/Archi_3.jpg",
-            text: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,tempus viverra turpis. Fusce condimentum nunc ac nisi vulputatefringilla. Donec lacinia congue felis in faucibus.",
+            image: "assets/icones/drawing-architecture-project-of-a-house.svg",
+            text: "Lors de mon premier contact avec le client, j'ai l'habitude de le faire sur son terrain pour que je puisse avoir un aperçu de son environnement et de son voisinage. Ainsi j'aurais une idée bien plus claire de ce que je pourrais lui présenter. Ensuite je lui demande son budget et ces attentes aux niveau architecturale du projet pour lui dire directement si c'est réalisable ou pas. S'en suit tout le travail de plans : esquisses – modèle 3D – plans définitif pour obtention du permis de construire.",
         }
     ]
     render() {
@@ -86,7 +86,7 @@ class Reseaux extends Component {
             <Grid id="reseaux" fluid>
 
                 <Row>
-                    <Col style={{ padding: 50}} className="text-center">
+                    <Col style={{ padding: 50 }} className="text-center">
                         <h2>RÉSEAUX PROFESIONNELS</h2>
                     </Col>
                 </ Row>

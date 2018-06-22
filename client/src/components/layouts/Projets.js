@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Grid, Row, Col, Media, FormGroup } from 'react-bootstrap/lib/';
 import { Parallax } from 'react-parallax';
 
@@ -16,27 +16,28 @@ function FieldGroup({ id, image, subtitle, text, index }) {
                     <Media.Heading  >
                         {subtitle}
                     </Media.Heading>
-                    <p  className="text-justify">{text}</p>
+                    <p className="text-justify">{text}</p>
                 </Media.Body>
             </Media>
-        )}
-
-        return (
-            <FormGroup controlId={id}>
-                <Row style={{ paddingRight : 50, paddingLeft : 50 }} className="show-grid">
-                    <Col>
-                        {html}
-                    </ Col>
-                </ Row>
-            </FormGroup>
-        );
+        )
     }
+
+    return (
+        <FormGroup controlId={id}>
+            <Row style={{ paddingRight: 50, paddingLeft: 50 }} className="show-grid">
+                <Col>
+                    {html}
+                </ Col>
+            </ Row>
+        </FormGroup>
+    );
+}
 class Projets extends Component {
     config = [
         {
             subtitle: "Les projets Tikko",
-            image: "assets/Archi_0.jpg",
-            text: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,tempus viverra turpis. Fusce condimentum nunc ac nisi vulputatefringilla. Donec lacinia congue felis in faucibus.",
+            image: "assets/icones/exit-opened-door.svg",
+            text: "Je continuerais à faire ce que j’aime en faisant de nombreuse villas.",
         }
     ]
     render() {
@@ -54,7 +55,7 @@ class Projets extends Component {
             <Grid id="projets" fluid>
 
                 <Row>
-                    <Col style={{ padding: 50}} className="text-center">
+                    <Col style={{ padding: 50 }} className="text-center">
                         <h2 >PROJETS FUTURS</h2>
                     </Col>
                 </ Row>
