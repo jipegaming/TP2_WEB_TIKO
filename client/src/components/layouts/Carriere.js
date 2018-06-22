@@ -8,7 +8,7 @@ function FieldGroup({ id, image, subtitle, text, index }) {
         html = (
             <Media>
                 <Media.Left>
-                        <img width={64} height={64} alt="thumbnail" src={image}/>
+                        <img style={{ height: '100vh', width: '100%' }} alt="thumbnail" src={image}/>
                 </Media.Left>
                 <Media.Body>
                     <Media.Heading  >

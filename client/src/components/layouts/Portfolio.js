@@ -5,37 +5,37 @@ class Porfolio extends Component {
     render() {
         const gridInstance = (
             <Grid id="portfolio">
-                <Row className="show-grid">
+                <Row style={{ paddingTop: 50, paddingBottom: 30 }} className="show-grid">
                     <Col>
                         <h2>PORTFOLIO</h2>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="show-grid">
                     <Col xs={6} md={3}>
-                        <img src="assets/Archi_0.jpg" rounded />
+                        <img src="assets/640x480-manu.jpg" style={{ height: '100%', width: '100%' }} alt="thumbnail" class="img-thumbnail" />
                     </Col>
                     <Col xs={6} md={3}>
-                        <img src="assets/Archi_0.jpg" circle />
+                        <img src="assets/640x480-ariiura1.jpg" style={{ height: '100%', width: '100%' }} alt="thumbnail" class="img-thumbnail" />
                     </Col>
                     <Col xs={6} md={3}>
-                        <img src="assets/Archi_0.jpg" thumbnail />
+                        <img src="assets/640x480-ariiura2.jpg" style={{ height: '100%', width: '100%' }} alt="thumbnail" class="img-thumbnail" />
                     </Col>
                     <Col xs={6} md={3}>
-                        <img src="assets/Archi_0.jpg" thumbnail />
+                        <img src="assets/640x480-ariiura3.jpg" style={{ height: '100%', width: '100%' }} alt="thumbnail" class="img-thumbnail" />
                     </Col>
                 </Row>
-                <Row>
+                <Row className="show-grid">
                     <Col xs={6} md={3}>
-                        <img src="assets/Archi_0.jpg" rounded />
+                        <img src="assets/640x480-ecocar1.jpg" style={{ height: '100%', width: '100%' }} alt="thumbnail" class="img-thumbnail" />
                     </Col>
                     <Col xs={6} md={3}>
-                        <img src="assets/Archi_0.jpg" circle />
+                        <img src="assets/640x480-ecocar2.jpg" style={{ height: '100%', width: '100%' }} alt="thumbnail" class="img-thumbnail" />
                     </Col>
                     <Col xs={6} md={3}>
-                        <img src="assets/Archi_0.jpg" thumbnail />
+                        <img src="assets/640x480-cariot1.jpg" style={{ height: '100%', width: '100%' }} alt="thumbnail" class="img-thumbnail" />
                     </Col>
                     <Col xs={6} md={3}>
-                        <img src="assets/Archi_0.jpg" thumbnail />
+                        <img src="assets/640x480-ariiura2.jpg" style={{ height: '100%', width: '100%' }} alt="thumbnail" class="img-thumbnail" />
                     </Col>
                 </Row>
             </Grid>
