@@ -21,7 +21,7 @@ class Navigation extends Component {
             <NavItem href = "#reseaux">
               Réseaux
             </NavItem>
-            <NavItem href = "#Projets">
+            <NavItem href = "#projets">
               Projets
             </NavItem>
             <NavItem href = "#portfolio">
@@ -30,7 +30,6 @@ class Navigation extends Component {
             <NavItem href = "#contact">
               Contacts
             </NavItem>
-
           </Nav>
         </Navbar.Collapse>
       </Navbar>

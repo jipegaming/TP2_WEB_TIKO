@@ -9,7 +9,7 @@ function FieldGroup({ id, image, subtitle, text, index }) {
     if (index % 2 === 0) {
         html = (
             <Media>
-                <Media.Left>
+                <Media.Left className="border">
                     <img width={100} height={100} alt="thumbnail" src={image} />
                 </Media.Left>
                 <Media.Body>
@@ -23,11 +23,11 @@ function FieldGroup({ id, image, subtitle, text, index }) {
     } else {
         html = (
             <Media>
-                <Media.Body>
-                    <Media.Heading  >
+                <Media.Body >
+                    <Media.Heading>
                         {subtitle}
                     </Media.Heading>
-                    <p  className="text-justify">{text}</p>
+                    <p className="text-justify">{text}</p>
                 </Media.Body>
                 <Media.Right>
                     <img width={100} height={100} alt="thumbnail" src={image} />
@@ -39,7 +39,7 @@ function FieldGroup({ id, image, subtitle, text, index }) {
     }
     return (
         <FormGroup controlId={id}>
-            <Row className="show-grid">
+            <Row style={{ paddingRight : 50, paddingLeft : 50 }} className="show-grid">
                 <Col>
                     {html}
                 </ Col>
@@ -84,18 +84,18 @@ class Carriere extends Component {
         });
         const articleInstance = (
 
-            <Grid id="carriere">
-
-                <Row style={{ paddingTop: 50, paddingBottom: 30 }}>
-                    <Col >
-
-                        <h2>CARRIÈRE PROFESSIONNELLE</h2>
+            <Grid fluid>
+                <Row>
+                 <img src="assets/main-banner.jpg" style={{width :'100%', height:'100%'}} responsive/>
+                 </Row>
+                <Row style={{ padding: 50}} className="text-center">
+                    <Col id="carriere" >
+                        <h2 >CARRIÈRE PROFESSIONNELLE</h2>
                     </Col>
                 </ Row>
                 {render}
-                <Parallax bgImage={image1}
-                    strength={500}>
-                    <div style={{ height: 250 }}></div>
+                <Parallax bgImage={image1} strength={500}>
+                    <div style={{ height: 300 }}></div>
                 </Parallax>
             </Grid>
 
@@ -104,10 +104,8 @@ class Carriere extends Component {
         return (
             articleInstance
         )
-
     }
 }
-
 export default Carriere;
 
 
