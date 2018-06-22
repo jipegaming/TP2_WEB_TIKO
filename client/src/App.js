@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, BrowserRouter } from 'react-router-dom';
 import Navigation from './components/layouts/Navigation';
 import Carriere from './components/layouts/Carriere';
 import Reseaux from './components/layouts/Reseaux';
@@ -19,6 +18,7 @@ class App extends Component {
         <Projets />
         <Porfolio />
         <Contact />
+        <Footer />
       </div>
     );
   }
