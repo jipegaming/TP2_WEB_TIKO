@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Media, FormGroup } from 'react-bootstrap/lib/';
+import { Grid, Row, Col} from 'react-bootstrap/lib/';
 import { Parallax } from 'react-parallax';
 
 const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
