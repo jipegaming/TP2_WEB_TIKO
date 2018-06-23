@@ -58,6 +58,7 @@ class Reseaux extends Component {
                     <Row>
                         <Col style={{ padding: 50 }} className="text-center">
                             <h2>RÉSEAUX PROFESIONNELS</h2>
+                            <hr style={{ 'border-width': "2px" }}></hr>
                         </Col>
                     </ Row>
                     <Row>

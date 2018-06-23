@@ -30,7 +30,7 @@ class Contact extends Component {
                 <Row className="show-grid">
                     <Col style={{ padding: 50 }} className="text-center">
                         <h2>CONTACT</h2>
-                        <hr style={{ 'border-width': "2px 10px 4px 20px" }}></hr>
+                        <hr style={{ 'border-width': "2px" }}></hr>
                     </Col>
                 </Row>
                 <Row className="show-grid" style={{ backgroundImage: "url('assets/contact.jpg')" }}>
@@ -91,9 +91,9 @@ class Contact extends Component {
                             </div>
                         </Form>
                     </Col>
-                    <Col md={6}>
-                        <h3 className="text-center">Plan de situation</h3>
-                        <div className='google-map' style={{ height: 500, width: 500, paddingTop: 20, paddingBottom: 50 }}>
+                    <Col md={6} className="text-center">
+                        <h3>Plan de situation</h3>
+                        <div className="google-map" style={{ height: 500, width: 500, paddingTop: 20, paddingBottom: 50 }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "AIzaSyDgM3E3-6L-xeln5pOHXhnVQsy6e711o5Y" }}
                                 defaultCenter={this.props.center}

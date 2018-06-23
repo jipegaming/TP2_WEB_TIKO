@@ -125,11 +125,12 @@ class Porfolio extends React.Component {
     render() {
         return (
             <Grid id="portfolio">
-                <Row className="show-grid">
+                <Row className="show-grid" style={{ padding: 50 }}>
 
-                    <h2 className="text-center" style={{ padding:50}}>PORTFOLIO</h2>
+                    <h2 className="text-center">PORTFOLIO</h2>
+                    <hr style={{ 'border-width': "2px" }}></hr>
 
-                    <Col>
+                    <Col  style={{ paddingTop: 50 }}>
                         <Gallery photos={photos} onClick={this.openLightbox} />
                         <Lightbox
                             images={photos}
