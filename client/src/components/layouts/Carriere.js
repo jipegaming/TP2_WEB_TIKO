@@ -56,7 +56,7 @@ class Carriere extends Component {
 
         const articleInstance = (
             <div>
-                <Grid>
+                <Grid style={{ paddingBottom: 80}}>
                     <Row className="text-center">
                         <h2 id="carriere" style={{ paddingTop: 80, paddingBottom: 50 }}>CARRIÈRE PROFESSIONNELLE</h2>
                     </ Row>

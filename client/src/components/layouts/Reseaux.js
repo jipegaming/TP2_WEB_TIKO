@@ -54,7 +54,7 @@ class Reseaux extends Component {
         });
         const articleInstance = (
             <div>
-                <Grid id="reseaux">
+                <Grid id="reseaux" style={{ paddingBottom: 80}}>
                     <Row>
                         <Col style={{ padding: 50 }} className="text-center">
                             <h2>RÉSEAUX PROFESIONNELS</h2>
