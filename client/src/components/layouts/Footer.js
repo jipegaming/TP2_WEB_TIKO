@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {div, Button } from 'react-bootstrap/lib/';
 
 class Footer extends Component {
     render() {

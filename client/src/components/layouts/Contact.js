@@ -42,6 +42,8 @@ class Contact extends Component {
                             <p>N°TAHITI 396887 - R.C. 27078A</p>
                             <p>Zone Industrielle de la Punaruu</p>
                             <p>Immeuble Ramata 1er étage</p>
+                            <p> tel: +689 87.79.75.83</p>
+                            <Button href="tel: +68987797583">Appeler</Button>
                         </div>
                     </div>
                         <h3 className="text-center">Envoyez-moi votre message</h3>
