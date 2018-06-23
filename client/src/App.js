@@ -10,7 +10,7 @@ import Porfolio from './components/layouts/Portfolio';
 class App extends Component {
   render() {
     const header = (
-      <div className="text-center" style={{ backgroundImage : "url('assets/main-banner.jpg')", height: 721}} Responsive>
+      <div style={{ backgroundImage : "url('assets/main-banner.jpg')", height: 721}} Responsive>
       </div>
     )
     return (
