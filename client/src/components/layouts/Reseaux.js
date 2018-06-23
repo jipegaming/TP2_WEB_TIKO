@@ -4,13 +4,13 @@ import { Parallax } from 'react-parallax';
 
 const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
 
-function FieldGroup({ image, subtitle, text}) {
-    return (         
-                <Col sm={6} md={3} sm={6} md={3}  className="text-center">
-                <img width={100} height={100} alt="thumbnail" src={image} className={'mx-auto'}/>
-                <h4>{subtitle}</h4>
-                <p>{text}</p>
-                </ Col>
+function FieldGroup({ image, subtitle, text }) {
+    return (
+        <Col sm={6} md={3} sm={6} md={3} className="text-center">
+            <img width={100} height={100} alt="thumbnail" src={image} className={'mx-auto'} />
+            <h4>{subtitle}</h4>
+            <p>{text}</p>
+        </ Col>
     );
 }
 
@@ -40,7 +40,7 @@ class Reseaux extends Component {
     ]
 
     // Rendu de la page 
-    
+
     render() {
 
         const render = this.config.map((res, i) => {
@@ -53,20 +53,21 @@ class Reseaux extends Component {
             />)
         });
         const articleInstance = (
-
-            <Grid id="reseaux">
-                <Row>
-                    <Col style={{ padding: 50 }} className="text-center">
-                        <h2>RÉSEAUX PROFESIONNELS</h2>
-                    </Col>
-                </ Row>
-                <Row>
-                {render}
-                </Row>
+            <div>
+                <Grid id="reseaux">
+                    <Row>
+                        <Col style={{ padding: 50 }} className="text-center">
+                            <h2>RÉSEAUX PROFESIONNELS</h2>
+                        </Col>
+                    </ Row>
+                    <Row>
+                        {render}
+                    </Row>
+                </Grid>
                 <Parallax bgImage={image1} strength={500}>
-                    <div style={{ height: 300 }}></div>
+                    <div style={{ height: 500 }}></div>
                 </Parallax>
-            </Grid>
+            </div>
         )
         return (articleInstance)
     }

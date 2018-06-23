@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col} from 'react-bootstrap/lib/';
+import { Grid, Row, Col } from 'react-bootstrap/lib/';
 import { Parallax } from 'react-parallax';
 
 const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
 
 // Structure
 
-function FieldGroup({ image, subtitle, text}) {
-    return (         
-                <Col sm={6} md={3}  className="text-center">
-                <img width={100} height={100} alt="thumbnail" src={image} />
-                <h4>{subtitle}</h4>
-                <p>{text}</p>
-                </ Col>
+function FieldGroup({ image, subtitle, text }) {
+    return (
+        <Col sm={6} md={3} className="text-center">
+            <img width={100} height={100} alt="thumbnail" src={image} />
+            <h4>{subtitle}</h4>
+            <p>{text}</p>
+        </ Col>
     );
 }
 
@@ -53,21 +53,22 @@ class Carriere extends Component {
                 index={i}
             />)
         });
-        
-        const articleInstance = (
-            
-            <Grid>
-                <Row className="text-center">
-                        <h2 id="carriere" style={{ paddingTop: 80, paddingBottom: 50 }}>CARRIÈRE PROFESSIONNELLE</h2>                  
-                </ Row>
-                <Row>
-                {render}
-                </Row>
-                <Parallax bgImage={image1} strength={500}>
-                    <div style={{ height: 300 }}></div>
-                </Parallax>
-            </Grid>
 
+        const articleInstance = (
+            <div>
+                <Grid>
+                    <Row className="text-center">
+                        <h2 id="carriere" style={{ paddingTop: 80, paddingBottom: 50 }}>CARRIÈRE PROFESSIONNELLE</h2>
+                    </ Row>
+                    <Row>
+                        {render}
+                    </Row>
+
+                </Grid>
+                <Parallax bgImage={image1} strength={500} >
+                    <div style={{ height: 500 }}></div>
+                </Parallax>
+            </div>
         )
 
         return (
