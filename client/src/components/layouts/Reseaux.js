@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Media, FormGroup } from 'react-bootstrap/lib/';
+import { Grid, Row, Col} from 'react-bootstrap/lib/';
 import { Parallax } from 'react-parallax';
 
 const image1 = "assets/parallax2.jpg";
