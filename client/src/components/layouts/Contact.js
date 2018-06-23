@@ -30,6 +30,7 @@ class Contact extends Component {
                 <Row className="show-grid">
                     <Col style={{ padding: 50 }} className="text-center">
                         <h2>CONTACT</h2>
+                        <hr style={{ 'border-width': "2px 10px 4px 20px" }}></hr>
                     </Col>
                 </Row>
                 <Row className="show-grid" style={{ backgroundImage: "url('assets/contact.jpg')" }}>
