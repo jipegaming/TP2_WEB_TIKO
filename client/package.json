@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://jipegaming.github.io/TP2_WEB_TIKO",
   "dependencies": {
+    "firebase": "^5.1.0",
     "google-map-react": "^1.0.4",
     "react": "^16.4.0",
     "react-bootstrap": "^0.32.1",
