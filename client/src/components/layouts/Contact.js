@@ -32,16 +32,19 @@ class Contact extends Component {
                         <h2>CONTACT</h2>
                     </Col>
                 </Row>
-                <Row className="show-grid">
-                    <Col md={6}>     
+                <Row className="show-grid" style={{ backgroundImage: "url('assets/contact.jpg')" }}>
+                    <Col md={6}>
+                    <div className="text-center">
                         <h3>Informations</h3>
-                    <div style={{ paddingTop: 20 }}>
-                        <p>N°TAHITI 396887 - R.C. 27078A</p>
-                        <p>Zone Industrielle de la Punaruu</p>
-                        <p>Immeuble Ramata 1er étage</p>
+                        <div style={{ paddingTop: 20 }}>
+                            <p>Roberto RODRIGUEZ - tikko@mail.pf</p>
+                            <p>N°TAHITI 396887 - R.C. 27078A</p>
+                            <p>Zone Industrielle de la Punaruu</p>
+                            <p>Immeuble Ramata 1er étage</p>
+                        </div>
                     </div>
-                        <h3>Envoyez-moi votre message</h3>
-                        <Form style={{ paddingTop: 20 }}>
+                        <h3 className="text-center">Envoyez-moi votre message</h3>
+                        <Form style={{ paddingTop: 20 }} method="POST" action="https://formspree.io/jpalvarez.tcc@gmail.com">
                             <Row>
                                 <Col sm={6}>
                                     <FieldGroup
@@ -72,7 +75,7 @@ class Contact extends Component {
                                 <Col sm={8}>
                                     <FieldGroup
                                         id="formControlsText"
-                                        type="text"
+                                        type="email"
                                         label="E-mail:"
                                         placeholder="entrez votre mail..."
                                     />
@@ -82,12 +85,14 @@ class Contact extends Component {
                                 <ControlLabel>Message:</ControlLabel>
                                 <FormControl componentClass="textarea" placeholder="écrivez votre message..." />
                             </FormGroup>
-                            <Button bsStyle="warning">Envoyer</Button>
+                            <div className="text-center">
+                            <Button bsStyle="warning" type="submit">Envoyer</Button>
+                            </div>
                         </Form>
                     </Col>
                     <Col md={6}>
-                        <h3>Plan de situation</h3>
-                        <div className='google-map' style={{ height: '80vh', width: '80vh', paddingTop: 20, paddingBottom:50 }}>
+                        <h3 className="text-center">Plan de situation</h3>
+                        <div className='google-map' style={{ height: '80vh', width: '80vh', paddingTop: 20, paddingBottom: 50 }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "AIzaSyDgM3E3-6L-xeln5pOHXhnVQsy6e711o5Y" }}
                                 defaultCenter={this.props.center}
