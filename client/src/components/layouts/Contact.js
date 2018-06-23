@@ -92,7 +92,7 @@ class Contact extends Component {
                     </Col>
                     <Col md={6}>
                         <h3 className="text-center">Plan de situation</h3>
-                        <div className='google-map' style={{ height: '80vh', width: '80vh', paddingTop: 20, paddingBottom: 50 }}>
+                        <div className='google-map' style={{ height: 500, width: 500, paddingTop: 20, paddingBottom: 50 }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "AIzaSyDgM3E3-6L-xeln5pOHXhnVQsy6e711o5Y" }}
                                 defaultCenter={this.props.center}
