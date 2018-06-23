@@ -35,7 +35,7 @@ class Contact extends Component {
                 <Row className="show-grid" style={{ backgroundImage: "url('assets/contact.jpg')" }}>
                     <Col md={6}>
                     <div className="text-center">
-                        <h3>Informations</h3>
+                        <h3>Information</h3>
                         <div style={{ paddingTop: 20 }}>
                             <p>Roberto RODRIGUEZ - tikko@mail.pf</p>
                             <p>N°TAHITI 396887 - R.C. 27078A</p>
