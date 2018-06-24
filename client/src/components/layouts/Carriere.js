@@ -37,7 +37,7 @@ class Carriere extends Component {
         {
             subtitle: "Médias",
             image: "assets/icones/folded-newspaper.svg",
-            text: "J’ai paru 2 ou 3 fois dans le magazine « la Maison du Fenua » pour présenter, avec l’accord du propriétaire, de nombreuses villas que j’ai pu réaliser.",
+            text: "J’ai paru deux ou trois fois dans le magazine « la Maison du Fenua » pour présenter, avec l’accord du propriétaire, de nombreuses villas que j’ai pu réaliser.",
         }
     ]
 

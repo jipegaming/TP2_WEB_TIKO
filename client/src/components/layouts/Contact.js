@@ -4,7 +4,7 @@ import GoogleMapReact from 'google-map-react';
 
 function FieldGroup({ id, label, help, ...props }) {
     return (
-        <FormGroup controlId={id}>
+        <FormGroup controlId={id} >
             <ControlLabel>{label}</ControlLabel>
             <FormControl {...props} />
             {help && <HelpBlock>{help}</HelpBlock>}
@@ -46,16 +46,16 @@ class Contact extends Component {
                             <Button href="tel: +68987797583">Appeler</Button>
                         </div>
                     </div>
-                        <h3 className="text-center">Envoyez-moi votre message</h3>
+                        <h3 className="text-center" >Envoyez-moi votre message</h3>
                         <Form style={{ paddingTop: 20 }} method="POST" action="https://formspree.io/jpalvarez.tcc@gmail.com">
                             <Row>
                                 <Col sm={6}>
-                                    <FieldGroup
-                                        id="formControlsText"
-                                        type="text"
-                                        label="Nom:"
-                                        placeholder="entrez votre nom..."
-                                    />
+                                        <FieldGroup
+                                            id="formControlsText"
+                                            type="text"
+                                            label="Nom:"
+                                            placeholder="entrez votre nom..."
+                                        />
                                 </Col>
                                 <Col sm={6}>
                                     <FieldGroup

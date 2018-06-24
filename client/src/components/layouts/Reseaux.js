@@ -57,7 +57,7 @@ class Reseaux extends Component {
                 <Grid id="reseaux" style={{ paddingBottom: 80}}>
                     <Row>
                         <Col style={{ padding: 50 }} className="text-center">
-                            <h2>RÉSEAUX PROFESIONNELS</h2>
+                            <h2>RÉSEAUX PROFESSIONNELS</h2>
                             <hr style={{ 'border-width': "2px" }}></hr>
                         </Col>
                     </ Row>
